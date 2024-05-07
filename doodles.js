@@ -120,10 +120,7 @@ function update() {
 
         context.fillStyle = "red";
         context.fillRect(bullet.x, bullet.y, bullet.width, bullet.height);
-
-        // Draw bullet image
-        context.drawImage(bulletImg, bullet.x, bullet.y, bullet.width, bullet.height);
-
+        
         // Check for collision with aliens
         for (let j = 0; j < alienArray.length; j++) {
             let alien = alienArray[j];
